@@ -104,16 +104,9 @@
 git clone https://github.com/yourusername/survify.git
 ```
 
-2. Install dependencies:
 
-```bash
-cd server
-npm install
-cd ../client
-npm install
-```
 
-3. Set up environment variables:
+2. Set up environment variables:
 
 * Create a `.env` file in the server root with:
 
@@ -123,7 +116,7 @@ MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 ```
 
-4. Run the development servers:
+3. Run the development servers:
 
 ```bash
 # In folder which contains both the frontend and backend folders
