@@ -8,7 +8,7 @@ import path from "path"
 const app = express();
 import dbConnect from "./lib/dbConnect.js";
 app.use(express.json());
-app.use(express.urlencoded({ extended: true })); // if you ever post form data
+app.use(express.urlencoded({ extended: true })); 
 
 app.use(cookieParser());
 

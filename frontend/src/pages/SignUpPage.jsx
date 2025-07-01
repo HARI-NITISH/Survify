@@ -14,7 +14,7 @@ const SignUpPage = () => {
   // const [isBusiness, setisBusiness] = useState(false);
   const { isPending, error, signupMutation } = useSignUp();
 
-  const handleSignup = (e) => {
+  const handleSignup = (e) => { 
     e.preventDefault();
     signupMutation(signupData);
   };

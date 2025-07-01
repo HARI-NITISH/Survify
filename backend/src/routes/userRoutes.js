@@ -10,11 +10,11 @@ import { adminaccess } from "../authMiddleWare/protectRoute.js";
 import { manageraccess } from "../authMiddleWare/protectRoute.js";
 router.use(protectRoute);
 router.post("/getsurveys",getsurveys);//with a string in  only. 
-router.post("/addsurvey",addsurvey);
+router.post("/addsurvey",manageraccess,addsurvey);
 router.post("/deletesurvey",manageraccess,deleteSurvey);
 router.post("/getsurvey",getsurvey);//single survey for the user 
 router.post("/getmysurveys",manageraccess,getBusinessSurveys);//only get the business surveys . 
-router.post("/getsurveyresult",getsurveyResult);//get the survey result for the user
+router.post("/getsurveyresult",manageraccess,getsurveyResult);//get the survey result for the user
 router.post("/:id/submit", submitSurveyResult);
 router.post("/get-unverified-business",adminaccess,getUnverifiedBusiness);
 export default router;

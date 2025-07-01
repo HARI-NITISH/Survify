@@ -32,8 +32,6 @@ const App = () => {
 
   return (
     <div className="h-screen" data-theme={theme}>
-
-
       <Routes>
         <Route
           path="/"
@@ -49,7 +47,6 @@ const App = () => {
             )
           }
         />
-
         <Route
           path="/surveyfill/:id"
           element={
@@ -63,7 +60,6 @@ const App = () => {
             !isAuthenticated ? <SignUpPage /> : <Navigate to={isVerified ? "/" : "/verification"} />
           }
         />
-
         <Route
           path="/login"
           element={
