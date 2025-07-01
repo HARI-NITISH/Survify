@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Survify
 
 **Survify** is a full-stack survey web application that allows users to participate in surveys and earn points, businesses to create and analyze surveys, and admins to manage the platform. The app is designed with role-based access control and provides separate interfaces for Users, Businesses, and Admins.
@@ -134,3 +135,6 @@ npm run start
 ## License
 
 This project is open-source and available under the MIT License.
+=======
+# Survify
+>>>>>>> dffc2f25d38a9330654080175028a639f4437c97
